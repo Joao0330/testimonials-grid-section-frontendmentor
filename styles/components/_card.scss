@@ -1,1 +1,185 @@
 @use '../abstracts' as *;
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	box-shadow: 2.5rem 1.4rem 3.125rem rgba(72, 85, 106, 0.37);
+
+	address {
+		display: flex;
+		align-items: center;
+		gap: 1.063rem;
+		font-style: normal;
+
+		img {
+			width: 1.75rem;
+			height: 1.75rem;
+			border-radius: 50%;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+
+			strong {
+				font-weight: 500;
+				line-height: 1.1;
+				color: $color-grey-500;
+			}
+
+			span {
+				font-size: 0.688rem;
+				font-weight: 500;
+				line-height: 1.1;
+				color: $color-grey-400;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		line-height: 1.2;
+		color: $color-grey-500;
+	}
+
+	p {
+		font-weight: 500;
+		line-height: 1.5;
+		color: $color-grey-400;
+	}
+
+	&--daniel {
+		background: $color-purple-500;
+		background-image: url('../../images/bg-pattern-quotation.svg');
+		background-repeat: no-repeat;
+		background-position: 200% 0;
+
+		@include breakpointMobile(48rem) {
+			grid-column: 1 / 3;
+			background-position: 69% 0;
+		}
+
+		@include breakpointMobile(80rem) {
+			grid-column: 1 / 3;
+			grid-row: 1 / 2;
+			background-position: 86% 0;
+		}
+
+		address {
+			img {
+				border: 2px solid #a775f1;
+			}
+
+			div {
+				strong {
+					color: $color-white;
+				}
+
+				span {
+					color: $color-purple-50;
+				}
+			}
+		}
+
+		h2 {
+			color: $color-white;
+		}
+
+		p {
+			color: $color-purple-50;
+		}
+	}
+
+	&--jonathan {
+		background: $color-grey-500;
+
+		@include breakpointMobile(48rem) {
+			box-shadow: 0.3rem 1.4rem 3.125rem rgba(72, 85, 106, 0.37);
+		}
+
+		@include breakpointMobile(80rem) {
+			grid-column: 3 / 4;
+			grid-row: 1 / 2;
+		}
+
+		address {
+			div {
+				strong {
+					color: $color-white;
+				}
+
+				span {
+					color: $color-grey-200;
+				}
+			}
+		}
+
+		h2 {
+			color: $color-white;
+		}
+
+		p {
+			color: $color-grey-100;
+		}
+	}
+
+	&--jeanette {
+		@include breakpointMobile(80rem) {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+	}
+
+	&--patrick {
+		background: $color-dark-blue;
+
+		@include breakpointMobile(48rem) {
+			grid-column: 1 / 3;
+		}
+
+		@include breakpointMobile(80rem) {
+			grid-column: 2 / 4;
+			grid-row: 2 / 3;
+		}
+
+		address {
+			img {
+				border: 2px solid $color-purple-500;
+			}
+
+			div {
+				strong {
+					color: $color-white;
+				}
+
+				span {
+					color: $color-white;
+				}
+			}
+		}
+
+		h2 {
+			color: $color-grey-200;
+		}
+
+		p {
+			color: $color-grey-100;
+		}
+	}
+
+	&--kira {
+		@include breakpointMobile(48rem) {
+			grid-column: 1 / 3;
+		}
+
+		@include breakpointMobile(80rem) {
+			grid-column: 4 / 5;
+			grid-row: 1 / 3;
+		}
+	}
+}

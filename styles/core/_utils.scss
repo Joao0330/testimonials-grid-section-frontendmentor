@@ -25,6 +25,13 @@
 	align-items: center;
 	justify-content: center;
 	min-height: 100dvh;
-	padding: 4rem 2rem;
-	border: 1px solid red;
+	padding: 4.563rem 2.188rem;
+
+	@include breakpointMobile(48rem) {
+		padding: 5.188rem 3.813rem 7.063rem 3.75rem;
+	}
+
+	@include breakpointMobile(80rem) {
+		padding: 14.313rem 10.063rem 13.625rem 10.313rem;
+	}
 }
