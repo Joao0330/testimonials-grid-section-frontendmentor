@@ -8,7 +8,7 @@
 	border-radius: 0.5rem;
 	box-shadow: 2.5rem 1.4rem 3.125rem rgba(72, 85, 106, 0.37);
 
-	address {
+	figure {
 		display: flex;
 		align-items: center;
 		gap: 1.063rem;
@@ -20,7 +20,7 @@
 			border-radius: 50%;
 		}
 
-		div {
+		figcaption {
 			display: flex;
 			flex-direction: column;
 			gap: 0.25rem;
@@ -70,12 +70,12 @@
 			background-position: 86% 0;
 		}
 
-		address {
+		figure {
 			img {
 				border: 2px solid #a775f1;
 			}
 
-			div {
+			figcaption {
 				strong {
 					color: $color-white;
 				}
@@ -107,8 +107,8 @@
 			grid-row: 1 / 2;
 		}
 
-		address {
-			div {
+		figure {
+			figcaption {
 				strong {
 					color: $color-white;
 				}
@@ -147,12 +147,12 @@
 			grid-row: 2 / 3;
 		}
 
-		address {
+		figure {
 			img {
 				border: 2px solid $color-purple-500;
 			}
 
-			div {
+			figcaption {
 				strong {
 					color: $color-white;
 				}

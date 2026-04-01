@@ -88,28 +88,28 @@ main {
   border-radius: 0.5rem;
   box-shadow: 2.5rem 1.4rem 3.125rem rgba(72, 85, 106, 0.37);
 }
-.card address {
+.card figure {
   display: flex;
   align-items: center;
   gap: 1.063rem;
   font-style: normal;
 }
-.card address img {
+.card figure img {
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 50%;
 }
-.card address div {
+.card figure figcaption {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
-.card address div strong {
+.card figure figcaption strong {
   font-weight: 500;
   line-height: 1.1;
   color: hsl(217, 19%, 35%);
 }
-.card address div span {
+.card figure figcaption span {
   font-size: 0.688rem;
   font-weight: 500;
   line-height: 1.1;
@@ -145,13 +145,13 @@ main {
     background-position: 86% 0;
   }
 }
-.card--daniel address img {
+.card--daniel figure img {
   border: 2px solid #a775f1;
 }
-.card--daniel address div strong {
+.card--daniel figure figcaption strong {
   color: hsl(0, 0%, 100%);
 }
-.card--daniel address div span {
+.card--daniel figure figcaption span {
   color: hsl(260, 100%, 95%);
 }
 .card--daniel h2 {
@@ -174,10 +174,10 @@ main {
     grid-row: 1/2;
   }
 }
-.card--jonathan address div strong {
+.card--jonathan figure figcaption strong {
   color: hsl(0, 0%, 100%);
 }
-.card--jonathan address div span {
+.card--jonathan figure figcaption span {
   color: hsl(0, 0%, 81%);
 }
 .card--jonathan h2 {
@@ -206,13 +206,13 @@ main {
     grid-row: 2/3;
   }
 }
-.card--patrick address img {
+.card--patrick figure img {
   border: 2px solid hsl(263, 55%, 52%);
 }
-.card--patrick address div strong {
+.card--patrick figure figcaption strong {
   color: hsl(0, 0%, 100%);
 }
-.card--patrick address div span {
+.card--patrick figure figcaption span {
   color: hsl(0, 0%, 100%);
 }
 .card--patrick h2 {
